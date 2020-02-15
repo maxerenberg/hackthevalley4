@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">HackTheValley4</string>
+    <string name="title_activity_maps">Map</string>
 </resources>
