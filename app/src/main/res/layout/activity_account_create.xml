@@ -57,19 +57,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
-            <EditText
-                android:id="@+id/createActPasswordConfirm"
-                android:layout_marginTop="10dp"
-                android:hint="@string/confirm_password"
-                android:inputType="textPassword"
-                android:layout_below="@id/createActPassword"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
 
             <EditText
                 android:id="@+id/createActPreferences"
                 android:layout_marginTop="10dp"
-                android:layout_below="@+id/createActPasswordConfirm"
+                android:layout_below="@+id/createActPassword"
                 android:hint="@string/preferences"
                 android:inputType="text"
                 android:gravity="top"
