@@ -1,4 +1,4 @@
-package ca.htv4;
+package com.hackthevalley4.hackthevalleyiv;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("ca.htv4", appContext.getPackageName());
+        assertEquals("com.hackthevalley4.hackthevalleyiv", appContext.getPackageName());
     }
 }

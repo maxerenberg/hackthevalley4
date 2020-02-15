@@ -1,4 +1,4 @@
-package ca.htv4;
+package com.hackthevalley4.hackthevalleyiv;
 
 import org.junit.Test;
 
