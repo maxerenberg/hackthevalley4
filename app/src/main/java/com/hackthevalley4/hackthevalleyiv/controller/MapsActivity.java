@@ -1,4 +1,4 @@
-package com.hackthevalley4.hackthevalleyiv;
+package com.hackthevalley4.hackthevalleyiv.controller;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.FragmentActivity;
@@ -13,6 +13,7 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.hackthevalley4.hackthevalleyiv.R;
 
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 

@@ -4,12 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context=".MainActivity"
-    tools:showIn="@layout/activity_main" >
+    tools:context=".controller.AccountCreateActivity">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="379dp"
+        android:layout_width="395dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
@@ -21,69 +19,68 @@
         app:layout_constraintTop_toTopOf="parent" >
 
         <RelativeLayout
-            android:padding="10dp"
+            android:padding="15dp"
             android:layout_gravity="center_vertical"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/loginTitle"
-                android:text="@string/login_title"
-                android:textAlignment="center"
-                android:padding="30dp"
-                android:textSize="36dp"/>
 
             <EditText
-                android:id="@+id/loginUsername"
-                android:layout_below="@+id/loginTitle"
+                android:id="@+id/createActName"
+                android:layout_marginTop="10dp"
+                android:hint="@string/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+            <EditText
+                android:id="@+id/createActEmail"
+                android:layout_marginTop="10dp"
+                android:hint="@string/email"
+                android:layout_below="@+id/createActName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/createActUsername"
                 android:layout_marginTop="10dp"
                 android:hint="@string/login_hint"
+                android:layout_below="@+id/createActEmail"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
             <EditText
-                android:id="@+id/loginPassword"
-                android:layout_below="@id/loginUsername"
-                android:layout_marginTop="25dp"
-                android:inputType="textPassword"
-                android:hint="@string/password_hint"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
-
-            <Button
-                android:id="@+id/loginButton"
-                android:layout_below="@id/loginPassword"
-                android:background="@color/colorAccent"
+                android:id="@+id/createActPassword"
                 android:layout_marginTop="10dp"
-                android:text="@string/login_title_button"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:textColor="@android:color/white"
+                android:hint="@string/password_hint"
+                android:inputType="textPassword"
+                android:layout_below="@+id/createActUsername"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
-            <TextView
-                android:id="@+id/or"
-                android:layout_below="@id/loginButton"
-                android:text="@string/or"
-                android:textAlignment="center"
-                android:textSize="25dp"
-                android:layout_marginTop="20dp"
+            <EditText
+                android:id="@+id/createActPasswordConfirm"
+                android:layout_marginTop="10dp"
+                android:hint="@string/confirm_password"
+                android:inputType="textPassword"
+                android:layout_below="@id/createActPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
             <Button
-                android:id="@+id/createActButton"
-                android:layout_below="@id/or"
-                android:background="@color/colorAccent"
-                android:layout_marginTop="18dp"
-                android:text="@string/create_account"
-                android:textStyle="bold"
+                android:id="@+id/makeActButton"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/createActPasswordConfirm"
+                android:text="@string/create_act_continue"
                 android:textColor="@android:color/white"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:background="@color/colorAccent"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
+
+
 
         </RelativeLayout>
+
     </androidx.cardview.widget.CardView>
 </androidx.constraintlayout.widget.ConstraintLayout>
