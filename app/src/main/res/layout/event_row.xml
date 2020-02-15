@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_margin="8dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"/>
+
+    <TextView
+        android:id="@+id/eventTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/cardView"
+        android:text="Title"
+        android:textStyle="bold"
+        android:layout_alignTop="@+id/cardView"
+        android:textSize="24dp"/>
+
+    <TextView
+        android:id="@+id/eventDate"
+        android:layout_alignTop="@+id/cardView"
+        android:layout_alignRight="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:layout_below="@+id/cardView"
+        android:textSize="24dp"
+        android:text="Date"/>
+
+
+    <TextView
+        android:id="@+id/eventDescription"
+        android:textSize="18dp"
+        android:text="This is a description"
+        android:layout_below="@+id/eventTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/eventLocation"
+        android:textSize="18dp"
+        android:text="This is a location"
+        android:textStyle="bold"
+        android:layout_below="@+id/eventDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

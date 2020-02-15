@@ -3,6 +3,7 @@ package com.hackthevalley4.hackthevalleyiv.controller;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.FragmentActivity;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
 import android.content.pm.PackageManager;
@@ -41,6 +42,8 @@ public class DashboardEventActivity extends FragmentActivity implements OnMapRea
         Radar.initialize("prj_test_pk_f5ded24f4e726f8af453a6e52de4f28f67d6b34b");
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dashboard_event);
+
+
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);

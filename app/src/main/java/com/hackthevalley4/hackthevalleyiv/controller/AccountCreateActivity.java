@@ -44,6 +44,6 @@ public class AccountCreateActivity extends AppCompatActivity {
     }
 
     private void giveData(String toString, String toString1, String toString2, String toString3, String toString4) {
-        // TODO: implement Mongo 
+        // TODO: implement Mongo
     }
 }
