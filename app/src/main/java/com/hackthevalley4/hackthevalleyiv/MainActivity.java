@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.hackthevalley4.hackthevalleyiv.controller.AccountCreateActivity;
+import com.hackthevalley4.hackthevalleyiv.controller.DashboardEventsActivity;
 import com.hackthevalley4.hackthevalleyiv.controller.MapsActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, MapsActivity.class));
+                startActivity(new Intent(MainActivity.this, DashboardEventsActivity.class));
             }
         });
 
