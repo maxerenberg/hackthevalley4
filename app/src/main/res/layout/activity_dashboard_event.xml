@@ -6,4 +6,6 @@
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="400dp"
-    tools:context=".controller.DashboardEventActivity" />
+    tools:context=".controller.DashboardEventActivity" >
+</fragment>
+
