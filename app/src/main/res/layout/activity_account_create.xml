@@ -21,7 +21,7 @@
         <RelativeLayout
             android:padding="15dp"
             android:layout_gravity="center_vertical"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
             <EditText
@@ -66,10 +66,20 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"/>
 
+            <EditText
+                android:id="@+id/createActPreferences"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/createActPasswordConfirm"
+                android:hint="@string/preferences"
+                android:inputType="text"
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
             <Button
                 android:id="@+id/makeActButton"
                 android:layout_marginTop="10dp"
-                android:layout_below="@+id/createActPasswordConfirm"
+                android:layout_below="@+id/createActPreferences"
                 android:text="@string/create_act_continue"
                 android:textColor="@android:color/white"
                 android:textStyle="bold"

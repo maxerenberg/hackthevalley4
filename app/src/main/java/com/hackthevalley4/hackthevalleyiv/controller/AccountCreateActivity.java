@@ -8,6 +8,8 @@ import com.hackthevalley4.hackthevalleyiv.R;
 
 public class AccountCreateActivity extends AppCompatActivity {
 
+    
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

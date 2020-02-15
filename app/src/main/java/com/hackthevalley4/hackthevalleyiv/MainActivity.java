@@ -4,19 +4,22 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import com.hackthevalley4.hackthevalleyiv.controller.AccountCreateActivity;
-import com.hackthevalley4.hackthevalleyiv.controller.DashboardEventsActivity;
-import com.hackthevalley4.hackthevalleyiv.controller.MapsActivity;
+import com.hackthevalley4.hackthevalleyiv.controller.DashboardEventActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.text.Editable;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
+    private EditText username;
+    private EditText password;
     private Button login;
     private Button createAct;
 
@@ -25,13 +28,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        username = findViewById(R.id.loginUsername);
+        password = findViewById(R.id.loginPassword);
         login = findViewById(R.id.loginButton);
         createAct = findViewById(R.id.createActButton);
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, DashboardEventsActivity.class));
+                if (isCorrect(username.getText().toString(), password.getText().toString()) ) {
+                    startActivity(new Intent(MainActivity.this, DashboardEventActivity.class));
+                } else {
+                    Toast.makeText(MainActivity.this, "Incorrect Username or Password", Toast.LENGTH_LONG).show();
+                    //Toast.makeText(MainActivity.this, username.getText(), Toast.LENGTH_LONG).show();
+                    //Toast.makeText(MainActivity.this, password.getText(), Toast.LENGTH_LONG).show();
+                }
             }
         });
 
@@ -45,6 +56,12 @@ public class MainActivity extends AppCompatActivity {
 
 
         }
+
+    private boolean isCorrect(String username, String password) {
+        return true;
+        // TODO
+
+    }
 
 
     @Override

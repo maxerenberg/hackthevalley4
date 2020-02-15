@@ -12,5 +12,7 @@
     <string name="name">Name</string>
     <string name="email">Email</string>
     <string name="confirm_password">Confirm Password</string>
-    <string name="create_act_continue">Continue</string>
+    <string name="create_act_continue">Confirm</string>
+    <string name="title_activity_dashboard_event">Map</string>
+    <string name="preferences">Preferences</string>
 </resources>
