@@ -38,7 +38,7 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.View
     @Override
     public int getItemCount() {
 
-        return eventData.
+        return 1;
     }
 
     public void setOnClickListener(AdapterView.OnItemClickListener itemClickListener) {

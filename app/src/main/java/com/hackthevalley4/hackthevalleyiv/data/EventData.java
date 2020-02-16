@@ -1,14 +1,19 @@
 package com.hackthevalley4.hackthevalleyiv.data;
 
 
+import android.util.Log;
+
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 
+import org.apache.http.client.fluent.Request;
+import org.apache.http.entity.ContentType;
 import  org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.google.gson.Gson;
 import com.hackthevalley4.hackthevalleyiv.Model.Event;
 
 import java.io.File;
