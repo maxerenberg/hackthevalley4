@@ -18,71 +18,93 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <RelativeLayout
-            android:padding="10dp"
-            android:layout_gravity="center_vertical"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                app:srcCompat="@drawable/logo" />
+
             <TextView
+                android:id="@+id/loginTitle1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/loginTitle"
-                android:text="@string/login_title"
+                android:layout_below="@+id/logo"
+                android:padding="10dp"
+                android:text="@string/login_title1"
                 android:textAlignment="center"
-                android:padding="30dp"
-                android:textSize="36dp"/>
+                android:textSize="36dp" />
+
+            <TextView
+                android:id="@+id/loginTitle2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginTitle1"
+                android:text="@string/login_title2"
+                android:textSize="36dp"
+                android:textAlignment="center"
+                android:textStyle="bold"/>
 
             <EditText
                 android:id="@+id/loginUsername"
-                android:layout_below="@+id/loginTitle"
-                android:layout_marginTop="10dp"
-                android:hint="@string/login_hint"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginTitle2"
+                android:layout_marginTop="10dp"
+                android:hint="@string/login_hint" />
 
             <EditText
                 android:id="@+id/loginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/loginUsername"
                 android:layout_marginTop="25dp"
-                android:inputType="textPassword"
                 android:hint="@string/password_hint"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:inputType="textPassword" />
 
             <Button
                 android:id="@+id/loginButton"
-                android:layout_below="@id/loginPassword"
-                android:background="@color/colorAccent"
-                android:layout_marginTop="10dp"
-                android:text="@string/login_title_button"
-                android:textSize="18dp"
-                android:textStyle="bold"
-                android:textColor="@android:color/white"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_below="@id/loginPassword"
+                android:layout_marginTop="10dp"
+                android:background="@color/colorAccent"
+                android:text="@string/login_title_button"
+                android:textColor="@android:color/white"
+                android:textSize="18dp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/or"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_below="@id/loginButton"
+                android:layout_marginTop="10dp"
                 android:text="@string/or"
                 android:textAlignment="center"
-                android:textSize="25dp"
-                android:layout_marginTop="20dp"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:textSize="25dp"/>
 
             <Button
                 android:id="@+id/createActButton"
-                android:layout_below="@id/or"
-                android:background="@color/colorAccent"
-                android:layout_marginTop="18dp"
-                android:text="@string/create_account"
-                android:textStyle="bold"
-                android:textColor="@android:color/white"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_below="@id/or"
+                android:layout_marginTop="18dp"
+                android:background="@color/colorAccent"
+                android:text="@string/create_account"
+                android:textColor="@android:color/white"
+                android:textStyle="bold" />
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
