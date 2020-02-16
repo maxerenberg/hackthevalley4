@@ -5,6 +5,7 @@ import android.os.Bundle;
 
 import com.hackthevalley4.hackthevalleyiv.controller.AccountCreateActivity;
 import com.hackthevalley4.hackthevalleyiv.controller.DashboardEventActivity;
+import com.hackthevalley4.hackthevalleyiv.controller.SplitMapTest;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (isCorrect(username.getText().toString(), password.getText().toString()) ) {
-                    startActivity(new Intent(MainActivity.this, DashboardEventActivity.class));
+                    startActivity(new Intent(MainActivity.this, SplitMapTest.class));
                 } else {
                     Toast.makeText(MainActivity.this, "Incorrect Username or Password", Toast.LENGTH_LONG).show();
                     //Toast.makeText(MainActivity.this, username.getText(), Toast.LENGTH_LONG).show();

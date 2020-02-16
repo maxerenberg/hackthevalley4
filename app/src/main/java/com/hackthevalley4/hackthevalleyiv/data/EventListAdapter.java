@@ -10,10 +10,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.hackthevalley4.hackthevalleyiv.Model.Event;
 import com.hackthevalley4.hackthevalleyiv.R;
 
-public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.ViewHolder> {
+import java.util.ArrayList;
 
+public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.ViewHolder> {
+    //private ArrayList<Event> eventArrayList;
     private EventData eventData = new EventData();
     public AdapterView.OnItemClickListener itemClickListener;
 
@@ -35,7 +38,7 @@ public class EventListAdapter extends RecyclerView.Adapter<EventListAdapter.View
     @Override
     public int getItemCount() {
 
-        return eventData.eventList().size;
+        return eventData.
     }
 
     public void setOnClickListener(AdapterView.OnItemClickListener itemClickListener) {
